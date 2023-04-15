@@ -1,11 +1,12 @@
 # https://github.com/game-ci/documentation/blob/main/.github/workflows/checks.yml
 name: 👩‍💻
-env:
-  NODE_VERSION: '18'
 
 on:
   push: { branches: [main] }
   pull_request: {}
+
+env:
+  NODE_VERSION: '18'
 
 jobs:
   codeFormatting:
